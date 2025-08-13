@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Imperial+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  --primary-font: 'Figtree', sans-serif;
+  --secondary-font: 'Playfair Display', serif;
+  --accent-font: 'Imperial Script', cursive;
+  --primary-color: hsl(47, 88%, 63%);
+  --secondary-color: hsl(0, 0%, 100%);
+  --accent-color: hsl(0, 0%, 0%);
+}
+/* ===== General Styles ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ===== Card Styles ===== */
+.card {
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+  box-shadow: 10px 10px 0px rgb(0, 0, 0);
+  max-width: 300px;
+  overflow: hidden;
+  border: 2px solid var(--accent-color);
+}
+
+/* Card Image */
+.card__image {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* Card Content */
+.card__content {
+  padding: 20px;
+}
+
+/* Category Tag */
+.card__category {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+/* Published Date */
+.published_date {
+  font-size: 12px;
+  font-weight: 800;
+  color:hsl(0, 0%, 7%);
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* Card Title */
+.card__title {
+  font-family: var(--primary-font);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.card__title:hover {
+  color: var(--primary-color);
+}
+
+
+/* Description */
+.card__description {
+  font-size: 14px;
+  color: hsl(0, 0%, 7%);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+
+/* Author Section */
+.card__info {
+  display: flex;
+  align-items: center;
+}
+
+.card__author-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card__author {
+  font-size: 14px;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+/* Attribution (Footer) */
+
+.attribution {
+  margin-top: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: #333;
+  font-family: var(--accent-font);
+}
+
+.attribution a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
